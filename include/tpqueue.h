@@ -1,15 +1,12 @@
 // Copyright 2022 NNTU-CS
 #ifndef INCLUDE_TPQUEUE_H_
 #define INCLUDE_TPQUEUE_H_
-
 template<typename T, int size>
 class TPQueue {
-
  private:
-  T* arr;
-  int startQueue;
-  int first, last, k;
-  
+ T* arr;
+ int startQueue;
+ int first, last, k;
  public:
   TPQueue():startQueue(size), first(0), last(0), k(0) {
    arr = new T[startQueue + 1];
